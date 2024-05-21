@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script:wght@500&family=Domine:wght@500&family=Fira+Sans&family=Libre+Caslon+Text:ital@1&family=Lobster&family=Lora:wght@500&family=Merriweather:wght@300&family=PT+Serif&family=Playfair+Display:wght@500&family=Poppins&family=Roboto:wght@300;400;500&family=Satisfy&family=Share+Tech&display=swap" rel="stylesheet">
+    
+    <title>Stopwatch Web Application</title>
+</head>
+<body>
+    <div class="stopwatch-timer-container">
+        <div class="stopwatch-timer-display">
+            00:00:00:000
+        </div>
+        <div class="stopwatch-timer-buttons">
+            <div class="stopwatch-timer-buttons-top-area">
+                <button id="pause-timer-button" onclick="pauseTimer()">Pause</button>
+                <button id="start-timer-button" onclick="startTimer()">Start</button>
+                <button id="reset-timer-button" onclick="resetTimer()">Reset</button>
+            </div>
+            <div class="stopwatch-timer-buttons-bottom-area">
+                <button id="restart-timer-button" onclick="restartTimer()">Restart</button>
+                <button id="lap-timer-button" onclick="lapTimer()">Lap</button>
+                <button id="reset-lap-timer-button" onclick="resetLapTimer()">Reset Lap</button>
+            </div>
+        </div>
+    </div>
+    <div class="lap-times-display"></div>
+    <!--Link JS-->
+    <script src="script.js"></script>
+</body>
+</html>
